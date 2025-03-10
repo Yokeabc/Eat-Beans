@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Beans - Classic Arcade Game Online | Play Now</title>
+    <meta name="description" content="Play the classic Eat Beans arcade game online for free. Navigate through mazes, eat beans, and avoid ghosts in this addictive retro gaming experience.">
+    <link rel="canonical" href="https://eatbeans.online">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --apple-blue: #0071e3;
+            --apple-gray: #f5f5f7;
+            --apple-dark-gray: #1d1d1f;
+            --apple-light-gray: #86868b;
+        }
+        body {
+            background-color: var(--apple-gray);
+            color: var(--apple-dark-gray);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .apple-btn {
+            background-color: var(--apple-blue);
+            border-radius: 980px;
+            padding: 12px 24px;
+            color: white;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .apple-btn:hover {
+            background-color: #0062c3;
+        }
+        .game-container {
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .section-title {
+            color: var(--apple-dark-gray);
+            font-weight: 600;
+        }
+        .game-iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 450px;
+            }
+        }
+        @media (max-width: 480px) {
+            .game-iframe {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/api/placeholder/48/48" alt="Eat Beans Logo" class="h-12 w-12 mr-3">
+                    <span class="text-xl font-bold">eatbeans.online</span>
+                </div>
+                <a href="#play" class="apple-btn hidden sm:block">Play Now</a>
+            </div>
+        </header>
+
+        <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <section class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Eat Beans</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Navigate mazes, eat beans, and avoid ghosts in this classic arcade experience!</p>
+            </section>
+
+            <section id="play" class="game-container mb-12 p-4 md:p-6">
+                <h2 class="section-title text-2xl mb-4">Play Eat Beans Online</h2>
+                <div class="flex justify-center">
+                    <iframe src="https://passer-by.com/pacman/" class="game-iframe" title="Eat Beans Game"></iframe>
+                </div>
+            </section>
+
+            <section class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="game-container p-6">
+                    <h2 class="section-title text-2xl mb-4">How To Play</h2>
+                    <ul class="space-y-3">
+                        <li>• Use arrow keys or swipe (on mobile) to move your character</li>
+                        <li>• Eat all beans to advance to the next level</li>
+                        <li>• Avoid ghosts or you'll lose a life</li>
+                        <li>• Eat power pellets to temporarily hunt ghosts</li>
+                        <li>• Collect fruits for bonus points</li>
+                    </ul>
+                </div>
+                <div class="game-container p-6">
+                    <h2 class="section-title text-2xl mb-4">Game Features</h2>
+                    <ul class="space-y-3">
+                        <li>• Classic arcade gameplay</li>
+                        <li>• Multiple challenging levels</li>
+                        <li>• Authentic sounds and visuals</li>
+                        <li>• Mobile-friendly controls</li>
+                        <li>• No download required - play in your browser!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="game-container p-6 mb-12">
+                <h2 class="section-title text-2xl mb-4">About Eat Beans</h2>
+                <div class="space-y-4">
+                    <p>Eat Beans is inspired by the iconic arcade game that took the world by storm in the 1980s. This browser version brings all the excitement of the original maze-action game to your device.</p>
+                    <p>The concept is simple yet addictive: guide your character through a maze, eating all the beans while avoiding colorful ghosts. Special power pellets allow you to turn the tables and hunt the ghosts for a limited time.</p>
+                    <p>This online version preserves the charm of the original while optimizing the experience for modern web browsers. Whether you're feeling nostalgic or discovering this classic for the first time, Eat Beans offers endless entertainment for players of all ages.</p>
+                </div>
+            </section>
+
+            <section class="text-center mb-12">
+                <a href="#play" class="apple-btn inline-block">Start Playing Now</a>
+            </section>
+        </main>
+
+        <footer class="bg-white py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center text-sm text-gray-500">
+                    <p>© 2025 eatbeans.online - All rights reserved</p>
+                    <p class="mt-2">This is a fan-made version of the classic arcade game. All trademarks belong to their respective owners.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
